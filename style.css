@@ -93,3 +93,62 @@ li button {
 .weather {
   font-size: 1.5em;
 }
+.pop {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 500ms;
+}
+.pop__box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  opacity: 0.9;
+}
+.pop span {
+  margin: 10px 0px;
+}
+.notice {
+  margin-bottom: 10px;
+}
+.contents h5 {
+  font-weight: bold;
+}
+.ment {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.confirm {
+  margin: 10px 0px;
+  border: 2px white solid;
+  border-radius: 5px;
+  background-color: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  background-color: none;
+  padding: 5px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+}
+.pop__showing {
+  visibility: hidden;
+  opacity: 0;
+  transition: 500ms;
+}

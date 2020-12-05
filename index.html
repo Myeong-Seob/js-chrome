@@ -11,6 +11,7 @@
       <div class="container">
     <div class="js-clock">
       <h1>00:00</h1>
+      <h3 class="ment">Why WeatherAPI doesn't work?</h3> <button class="confirm">Confirm the Reason 🔍</button>
       <h4 class="js-grettings grettings"></h4>
       <h3 class="weather"></h3>
     
@@ -35,13 +36,33 @@
       </div>
     </div>
     </div>
-
-    
+</div>
+<div class="pop">
+  <div class="pop__box">
+    <div class="notice">
+      <span>Notice</span>
+      
+    <button class="close">&times;</button>
+    </div>
+    <div class="contents">
+      <span>Hello.</span><br>
+      <span>On this Page, WeatherAPI doesn't work properly. (Actually can't)</span><br>
+      <span>It works well on my computer. But I blocked WeatherAPI code.</span><br>
+      <span>I know exposing real 'API KEY' is very harmful.</span><br>
+      <span>So, I had tried to make '.env' to keep safe my KEY.</span><br>
+      <span>Doing this, I realized I can't use 'require' on Browser without Webpack.</span><br>
+      <span>So Sad..</span><br>
+      <span>Instead I made this pop up massage.</span><br>
+      <span>Thank you!!!</span><br><br>
+      <h5>Summary: I don't want to expose real API KEY. and i don't know how to handle Webpack. So I made this Massage.</h5>
+    </div>
+  </div>
 </div>
     <script src="clock.js"></script>
     <script src="user.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
+    <script src="pop.js"></script>
     <script  type="module"src="weather.js"></script>
   </body>
 </html>
