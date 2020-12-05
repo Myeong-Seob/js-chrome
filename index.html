@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS App</title>
-</head>
-<body>
+  </head>
+  <body>
+      <div class="container">
     <div class="js-clock">
-        <h1>
-            00:00
-        </h1>
-        <h4 class="js-grettings grettings"></h4>
+      <h1>00:00</h1>
+      <h4 class="js-grettings grettings"></h4>
+      <h3 class="weather"></h3>
+    
+
+      <form class="js-form form">
+        <input type="text" placeholder="What is your Name?" />
+      </form>
     </div>
-    <form class="js-form form">
-        <input type="text" placeholder="What is your Name?">
-    </form>
     <div class="tasks">
-        <h1>Tasks</h1>
-    <form class="js-ToDo">
-      <input type="text" placeholder="Add task" />
-    </form>
-    <div>
-      <h3>Pending</h3>
-      <ul class="pending_ul"></ul>
+      <h1>What are you doing?</h1>
+      <form class="js-ToDo">
+        <input type="text" placeholder="Add task" />
+      </form>
+      <div class="task__container">
+      <div class="pending">
+        <h3>Pending</h3>
+        <ul class="pending_ul"></ul>
+      </div>
+      <div class="finished">
+        <h3>Finished</h3>
+        <ul class="finished_ul"></ul>
+      </div>
     </div>
-    <div>
-      <h3>Finished</h3>
-      <ul class="finished_ul"></ul>
     </div>
-    </div>
+
+    
+</div>
     <script src="clock.js"></script>
     <script src="user.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
-</body>
+    <script  type="module"src="weather.js"></script>
+  </body>
 </html>
