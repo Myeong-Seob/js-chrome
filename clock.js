@@ -12,9 +12,9 @@ const getTime=()=> {
   } : ${seconds < 10 ? `0${seconds}` : `${seconds}`}`;
 }
 
-const init=() => {
+const clock=() => {
  getTime();
   setInterval(getTime, 1000);
 }
 
-init();
+clock();
